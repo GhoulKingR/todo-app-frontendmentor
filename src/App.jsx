@@ -68,10 +68,11 @@ function App() {
           />
         </div>
         <div className="app_header app__container">
-          <img src={TODO} alt="todo" />
+          <img src={TODO} alt="todo" className="app__todo" />
           <img
             src={darkTheme ? IconSun : IconMoon}
             alt="moon"
+            className="app__themeSwitcher"
             onClick={() => setDarkTheme(!darkTheme)}
           />
         </div>

@@ -20,6 +20,7 @@
 .app_header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 48px;
     margin-bottom: 40px;
 }
@@ -105,6 +106,10 @@
     display: none;
 }
 
+.app__themeSwitcher {
+    width: 20px;
+    height: 20px;
+}
 
 @media (min-width: 550px) {
     .app__BgImg .app__mobile, .app__filterItems {
@@ -118,6 +123,18 @@
     }
     .app__itemsContainer {
         margin-bottom: 49px;
+    }
+    .app__todo {
+        width: 167px;
+        height: 40px;
+    }
+    .app_header {
+        margin-top: 70px;
+        margin-bottom: 48px;
+    }
+    .app__themeSwitcher {
+        width: 26px;
+        height: 26px;
     }
 }
 
