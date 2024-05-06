@@ -1,0 +1,173 @@
+.app__BgImg {
+    width: 100vw;
+    height: 0;
+    z-index: -1;
+    position: relative;
+}
+
+.app__BgImg img {
+    width: 100vw;
+}
+
+.app__BgImg .app__desktop {
+    display: none;    
+}
+
+.app__headerContainer {
+    width: 100vw;
+}
+
+.app_header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+
+.app__container {
+    width: calc(100% - 24px - 26px);
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app__form {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 15px;
+    padding-left: 20px;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.app__form > input {
+    border: none;
+    margin-left: 12px;
+    outline: none;
+    flex-grow: 1;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    background: transparent;
+}
+
+.app__todoItem {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e3e4f1;
+}
+
+.app__todoItem span {
+    flex-grow: 1;
+    margin-right: 12px;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    color: #494c6b;
+}
+
+.app__crossButton {
+    width: 12px;
+    height: 12px;
+}
+
+.app__itemsContainer {
+    box-shadow: 0px 35px 50px 15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+.app__itemsOptions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.17px;
+    color: #9495a5;
+}
+
+.app__itemsOptions .app__center {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.19px;
+    color: #9495a5;
+    display: none;
+}
+
+
+@media (min-width: 550px) {
+    .app__BgImg .app__mobile, .app__filterItems {
+        display: none !important;
+    }
+    .app__BgImg .app__desktop {
+        display: block;    
+    }
+    .app__itemsOptions .app__center {
+        display: flex;
+    }
+    .app__itemsContainer {
+        margin-bottom: 49px;
+    }
+}
+
+.app__filterItems div {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.19px;
+    color: #9495a5;
+}
+
+.app__filterItems {
+    background-color: white;
+    box-shadow: 0px 35px 50px 15px rgba(194, 195, 214, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.app__filterItems div:first-of-type, .app__itemsOptions div:first-of-type {
+    margin-right: 19px;
+}
+
+.app__filterItems div:last-of-type, .app__itemsOptions div:last-of-type {
+    margin-left: 18px;
+}
+
+.app__hint {
+    text-align: center;
+    color: #9495a5;
+    font-size: 14px;
+    letter-spacing: -0.19px;
+}
+
+.app__itemsContainer.dark, .app__filterItems.dark {
+    background-color: #25273D;
+    box-shadow: none;
+}
+
+.app__itemsContainer.dark .app__todoItem {
+    border-bottom: 1px solid #393A4B;
+}
+
+.app__itemsContainer.dark .app__todoItem span, .app__form.dark > input {
+    color: #C8CBE7;
+}
+
+.app__form.dark {
+    background-color: #25273D;
+    color: #767992;
+}

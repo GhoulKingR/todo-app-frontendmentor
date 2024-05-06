@@ -1,0 +1,31 @@
+.checkbox__border {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #E3E4F1;
+}
+
+.checkbox__border.dark {
+    border: 1px solid #393A4B;
+}
+
+.checkbox__border:hover {
+    border: double 1px transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(-45deg, #55DDFF, #C058F3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.checkbox__border.dark:hover {
+    background-image: linear-gradient(#25273D, #25273D), linear-gradient(-45deg, #55DDFF, #C058F3);
+}
+
+.checkbox__border.checked, .checkbox__border.checked:hover {
+    background: linear-gradient(-45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}

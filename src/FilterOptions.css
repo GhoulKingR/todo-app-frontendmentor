@@ -1,0 +1,11 @@
+.filterOptions__div {
+    cursor: pointer;
+}
+
+.filterOptions__div:hover {
+    color: #494C6B;
+}
+
+.filterOptions__div.dark:hover {
+    color: #E3E4F1;
+}

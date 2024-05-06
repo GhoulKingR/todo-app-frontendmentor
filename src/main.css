@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin sans';
+}
+
+@font-face {
+  font-family: 'Josefin sans';
+  src: url(./assets/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+html, body, #root {
+  width: 100vw;
+  min-height: 100vh;
+}
